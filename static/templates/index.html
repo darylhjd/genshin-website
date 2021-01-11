@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{{template "boilerplate_top" .}}
+<main>
+    <p>Welcome to genshin.dev</p>
+    <p>Here are the list of available data types provided by the API!</p>
+    <ul>
+        {{range $dtype := .DataTypes}}
+        <li><a href="//localhost:8080/{{ $dtype }}">{{ $dtype }}</a></li>
+        {{end}}
+    </ul>
+</main>
+{{template "boilerplate_bottom" .}}

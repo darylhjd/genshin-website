@@ -1,0 +1,26 @@
+{{define "boilerplate_top"}}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Har Jing Daryl">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title id="title">{{ .PageData.Title }}</title>
+
+    <link rel="stylesheet" href="/static/styling/style.css">
+    <script src="/static/styling/script.js" defer></script>
+</head>
+<body>
+<nav>
+</nav>
+{{end}}
+
+
+{{define "boilerplate_bottom"}}
+<footer>
+    <p>Author: Har Jing Daryl</p>
+    <a href="https://github.com/darylhjd">GitHub</a>
+</footer>
+</body>
+</html>
+{{end}}

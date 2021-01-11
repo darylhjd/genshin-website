@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{{template "boilerplate_top" .}}
+<main>
+    <p>Here is a list of available {{ .DataType }}!</p>
+    <ul>
+        {{ $datatype := .DataType }}
+        {{range $name := .NameList}}
+        <li>
+            <a href="//localhost:8080/{{ $datatype }}/{{ $name }}">{{ $name }}</a>
+        </li>
+        {{end}}
+    </ul>
+</main>
+{{template "boilerplate_bottom" .}}
